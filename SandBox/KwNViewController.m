@@ -43,24 +43,27 @@
     // or
     // Function
     NSFileManager * fileManager = [NSFileManager defaultManager];
-    // dame la ruta de la aplicacion
+    
+    // dame la ruta al directorio cache de esta aplicacion
     NSURL *url = [[fileManager URLsForDirectory:NSCachesDirectory
                                       inDomains:NSUserDomainMask]
                   lastObject];
-    
+
+    // creamos un archivo dentro del directorio de caches de la sandbox
     url = [url URLByAppendingPathComponent:@"text.txt"];
     
     // Guardamos algo dentro del archivo
-    
+    // se define el error
     NSError * error = nil;
-    BOOL rc = NO;
+    BOOL isWriting = NO;
     
-    rc = [@"Hola persistencia" writeToURL:url
-                               atomically:YES
-                                 encoding:NSUTF8StringEncoding
-                                    error:&error];
+    // atomically transaccion para guardar un archivo en la sandBox
+    isWriting = [@"Hola persistencia" writeToURL:url
+                                      atomically:YES
+                                        encoding:NSUTF8StringEncoding
+                                           error:&error];
     
-    if(rc == NO)
+    if(isWriting == NO)
     {
         // Ha Habido un error
         NSLog(@"Error al guardar: %@", error);
