@@ -7,12 +7,23 @@
 //
 
 #import "KwNAppDelegate.h"
+#import "KwNViewController.h"
 
 @implementation KwNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //create uiwindow instance
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //create model
+    
+    //create vc
+    KwNViewController * kVC = [[KwNViewController alloc]initWithNibName:@"KwNViewController"
+                                                                 bundle:nil];
+    
+    //set rootVC
+    self.window.rootViewController = kVC;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

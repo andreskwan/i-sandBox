@@ -19,6 +19,8 @@
 		EA6D7E07180FFE8100455FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6D7DEF180FFE8100455FA5 /* UIKit.framework */; };
 		EA6D7E0F180FFE8100455FA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA6D7E0D180FFE8100455FA5 /* InfoPlist.strings */; };
 		EA6D7E11180FFE8100455FA5 /* SandBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6D7E10180FFE8100455FA5 /* SandBoxTests.m */; };
+		EA6D7E1D180FFEC000455FA5 /* KwNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6D7E1B180FFEC000455FA5 /* KwNViewController.m */; };
+		EA6D7E1E180FFEC000455FA5 /* KwNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6D7E1C180FFEC000455FA5 /* KwNViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		EA6D7E0C180FFE8100455FA5 /* SandBoxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SandBoxTests-Info.plist"; sourceTree = "<group>"; };
 		EA6D7E0E180FFE8100455FA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA6D7E10180FFE8100455FA5 /* SandBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandBoxTests.m; sourceTree = "<group>"; };
+		EA6D7E1A180FFEC000455FA5 /* KwNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwNViewController.h; sourceTree = "<group>"; };
+		EA6D7E1B180FFEC000455FA5 /* KwNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwNViewController.m; sourceTree = "<group>"; };
+		EA6D7E1C180FFEC000455FA5 /* KwNViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KwNViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 			children = (
 				EA6D7DFA180FFE8100455FA5 /* KwNAppDelegate.h */,
 				EA6D7DFB180FFE8100455FA5 /* KwNAppDelegate.m */,
+				EA6D7E1F180FFED300455FA5 /* viewControllers */,
 				EA6D7DFD180FFE8100455FA5 /* Images.xcassets */,
 				EA6D7DF2180FFE8100455FA5 /* Supporting Files */,
 			);
@@ -142,6 +148,16 @@
 				EA6D7E0D180FFE8100455FA5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA6D7E1F180FFED300455FA5 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D7E1A180FFEC000455FA5 /* KwNViewController.h */,
+				EA6D7E1B180FFEC000455FA5 /* KwNViewController.m */,
+				EA6D7E1C180FFEC000455FA5 /* KwNViewController.xib */,
+			);
+			name = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6D7DF6180FFE8100455FA5 /* InfoPlist.strings in Resources */,
+				EA6D7E1E180FFEC000455FA5 /* KwNViewController.xib in Resources */,
 				EA6D7DFE180FFE8100455FA5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +259,7 @@
 			files = (
 				EA6D7DF8180FFE8100455FA5 /* main.m in Sources */,
 				EA6D7DFC180FFE8100455FA5 /* KwNAppDelegate.m in Sources */,
+				EA6D7E1D180FFEC000455FA5 /* KwNViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
