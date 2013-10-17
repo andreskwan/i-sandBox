@@ -58,6 +58,7 @@
     BOOL isWriting = NO;
     
     // atomically transaccion para guardar un archivo en la sandBox
+    // & pointer to a pointer
     isWriting = [@"Hola persistencia" writeToURL:url
                                       atomically:YES
                                         encoding:NSUTF8StringEncoding
